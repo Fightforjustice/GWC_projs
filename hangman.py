@@ -4,13 +4,13 @@ word = input("Type a word for someone to guess: ")
 word = word.lower()
 
 # Checks if only letters are present
-#blanks = []
-if(word.isalpha() == False)
+blanks = []
+if(word.isalpha() == False):
 	print("That's not a word!")
-#else:
-#	for char in word:
-#			blanks.append("_")
-#print blanks.join()
+else:
+	for char in word:
+			blanks.append("_")
+print blanks.join()
   
       
 # Some useful variables
