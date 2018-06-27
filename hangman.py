@@ -9,7 +9,7 @@ if(word.isalpha() == False):
 	print("That's not a word!")
 else:
 	for char in word:
-	blanks.append("_")
+		blanks.append("_")
 print blanks.join()
   
       
