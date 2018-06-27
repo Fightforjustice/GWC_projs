@@ -27,7 +27,7 @@ while (numfails < maxfails):
     		print("Not a letter")
 	elif (guess not in word):
 		print ("Sorry; that's not one of the letters!")
-    		numfails+=1
+    		numfails += 1
     	else:
     		for i in word:
       			if (i == guess):
