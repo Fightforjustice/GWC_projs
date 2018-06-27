@@ -12,7 +12,7 @@ else:
 			blanks.append("_")
 			
 s = ''.join(blanks)
-print s
+print(s)
   
       
 # Some useful variables
