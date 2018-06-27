@@ -5,7 +5,7 @@ word = word.lower()
 
 # Checks if only letters are present
 blanks = []
-if(word.isalpha() == False):
+if(word.isalpha() == False)
 	print("That's not a word!")
 	else:
 		for char in word:
