@@ -25,18 +25,19 @@ while (numfails < maxfails):
 	guess = input("Guess a letter:")
 	if (guess.isalpha() == False):
     		print("Not a letter")
-	elif (guess not in word):
-		numfails += 1
-		print ("Sorry; that's not one of the letters!")
 	else:
-    		for i in word:
-      			if (i == guess):
-        			word.remove(i)
-    		if (len(word) == 0):
-      			winner = True
-      			break
-  	guesses.append(guess)
-  	print ("Your guesses: " + guesses)
+		if (guess not in word):
+			numfails += 1
+			print ("Sorry; that's not one of the letters!")
+		else:
+    			for i in word:
+      				if (i == guess):
+        				word.remove(i)
+    			if (len(word) == 0):
+      				winner = True
+      				break
+		guesses.append(guess)
+  		print ("Your guesses: " + guesses)
 
 if(winner == True):
   	print("You win!")
