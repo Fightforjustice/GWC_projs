@@ -28,8 +28,7 @@ while (numfails < maxfails):
 	elif (guess not in word):
 		numfails += 1
 		print ("Sorry; that's not one of the letters!")
-		
-    	else:
+	else:
     		for i in word:
       			if (i == guess):
         			word.remove(i)
