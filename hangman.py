@@ -25,9 +25,9 @@ while (numfails < maxfails):
 	guess = input("Guess a letter:")
 	if (guess.isalpha() == False):
     		print("Not a letter")
-  		elif (guess not in word):
-    			print "Sorry; that's not one of the letters!"
-    			numfails+=1
+  	elif (guess not in word):
+    		print "Sorry; that's not one of the letters!"
+    		numfails+=1
   	else:
     		for i in word:
       			if (i == guess):
