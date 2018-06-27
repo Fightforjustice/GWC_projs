@@ -37,8 +37,7 @@ while (numfails < maxfails):
       				winner = True
       				break
 		guesses.append(guess)
-  	print ("Your guesses: " + guesses)
-
+  		print ("Your guesses: " + guesses)
 if(winner == True):
   	print("You win!")
 else:
