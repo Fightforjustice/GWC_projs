@@ -10,7 +10,7 @@ if(word.isalpha() == False):
 else:
 	for char in word:
 			blanks.append("_")
-print blanks.join()
+print ''.join(blanks)
   
       
 # Some useful variables
