@@ -1,6 +1,6 @@
 word = input("Type a word for someone to guess: ")
 
-# Converts the word to lowercase
+# Converts the word to lowercasse
 word = word.lower()
 
 # Checks if only letters are present
@@ -10,7 +10,9 @@ if(word.isalpha() == False):
 else:
 	for char in word:
 			blanks.append("_")
-print ''.join(blanks)
+			
+s = ''.join(blanks)
+print s
   
       
 # Some useful variables
