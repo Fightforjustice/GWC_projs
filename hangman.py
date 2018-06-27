@@ -22,7 +22,7 @@ numfails = 0
 winner = False
 
 while (numfails < maxfails):
-	guess = input("Guess a letter":)
+	guess = input("Guess a letter:")
 	if (guess.isalpha() == False):
     	print("Not a letter")
   	elif (guess not in word):
