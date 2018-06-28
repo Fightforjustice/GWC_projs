@@ -30,9 +30,7 @@ while (numfails < maxfails):
 			numfails += 1
 			print("Sorry; that's not one of the letters!")
 		else:
-    			for i in word:
-      				if (i == guess):
-        				word = word.strip(i)
+    			word = word.strip(guess)
 		if (len(word) == 0):
       			winner = True
       			break
