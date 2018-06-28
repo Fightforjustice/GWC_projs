@@ -10,6 +10,7 @@ if(word.isalpha() == False):
 else:
 	for char in word:
 			blanks.append("_")
+	word = word.lower()
 			
 s = ''.join(blanks)
 print(s)
@@ -36,14 +37,16 @@ while (numfails < maxfails):
 			numfails += 1
 			print("Sorry; that's not one of the letters!")
 		else:
-    			word = word.strip(guess)
+    			print ("Good job!")
+			word.replace(guess, "")
 		if (len(word) == 0):
-      			winner = True
-      			break
-		guesses.append(guess)
+			winner = True
+			break
+		guesses.append(guess.lower())
 		g = ", ".join(guesses)
-		print("Your guesses: " + g)
 		print(word)
+		print("Your guesses: " + g)
+		
 if(winner == True):
 	print("You win!")
 else:
