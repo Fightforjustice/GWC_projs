@@ -28,7 +28,7 @@ while (numfails < maxfails):
 	else:
 		if (guess not in word):
 			numfails += 1
-			print ("Sorry; that's not one of the letters!")
+			print("Sorry; that's not one of the letters!")
 		else:
     			for i in word:
       				if (i == guess):
@@ -39,7 +39,7 @@ while (numfails < maxfails):
       				break
 		guesses.append(guess)
 		g = ", ".join(guesses)
-		print ("Your guesses: " + g)
+		print("Your guesses: " + g)
 if(winner == True):
 	print("You win!")
 else:
