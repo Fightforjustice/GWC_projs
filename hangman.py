@@ -7,6 +7,8 @@ word = word.lower()
 blanks = []
 if(word.isalpha() == False):
 	print("That's not a word!")
+elif(" " in word):
+	print("Just one word, please! No spaces")
 else:
 	for char in word:
 			blanks.append("_")
@@ -44,7 +46,6 @@ while (numfails < maxfails):
 			break
 		guesses.append(guess.lower())
 		g = ", ".join(guesses)
-		print(word)
 		print("Your guesses: " + g)
 		
 if(winner == True):
