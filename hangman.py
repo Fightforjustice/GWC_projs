@@ -33,8 +33,8 @@ while (numfails < maxfails):
     			for i in word:
       				if (i == guess):
         				word = word.strip(i)
-				print (word)
-    			if (len(word) == 0):
+			print (word)
+			if (len(word) == 0):
       				winner = True
       				break
 		guesses.append(guess)
