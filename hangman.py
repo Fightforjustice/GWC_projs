@@ -38,7 +38,7 @@ while (numfails < maxfails):
 			print("Sorry; that's not one of the letters!")
 		else:
     			print ("Good job!")
-		word.replace(guess, "")
+		word = word.replace(guess, "")
 		if (len(word) == 0):
 			winner = True
 			break
