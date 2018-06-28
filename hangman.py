@@ -39,9 +39,9 @@ while (numfails < maxfails):
 		else:
     			print ("Good job!")
 			word.replace(guess, "")
-		if (len(word) == 0):
-			winner = True
-			break
+			if (len(word) == 0):
+				winner = True
+				break
 		guesses.append(guess.lower())
 		g = ", ".join(guesses)
 		print(word)
