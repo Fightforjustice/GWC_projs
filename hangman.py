@@ -32,7 +32,7 @@ while (numfails < maxfails):
 		else:
     			for i in word:
       				if (i == guess):
-        				word.remove(i)
+        				word = word.strip(i)
     			if (len(word) == 0):
       				winner = True
       				break
