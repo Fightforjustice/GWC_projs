@@ -24,7 +24,13 @@ winner = False
 while (numfails < maxfails):
 	guess = input("Guess a letter:")
 	if (guess.isalpha() == False):
-    		print("Not a letter")
+    		print("Make sure it's a letter!")
+	elif (len(guess) == 0):
+		print("Oops! Nothing entered.") 
+	elif (len(guess) > 1):
+		print("Just one letter, please!")
+	elif (guess in guesses):
+		print("You already guessed that.")
 	else:
 		if (guess not in word):
 			numfails += 1
