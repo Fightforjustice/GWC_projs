@@ -38,10 +38,10 @@ while (numfails < maxfails):
 			print("Sorry; that's not one of the letters!")
 		else:
     			print ("Good job!")
-			word.replace(guess, "")
-			if (len(word) == 0):
-				winner = True
-				break
+		word.replace(guess, "")
+		if (len(word) == 0):
+			winner = True
+			break
 		guesses.append(guess.lower())
 		g = ", ".join(guesses)
 		print(word)
